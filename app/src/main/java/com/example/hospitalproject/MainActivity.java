@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 Log.d(TAG_ACTIVITY, "Appointment button");
 
-                // TODO Change activity
                 Intent intent = new Intent(MainActivity.this, AppointmentActivity.class);
                 startActivity(intent);
             }

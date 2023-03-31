@@ -83,4 +83,10 @@
         android:onClick="BackToChoiceSpecialist_choice_date"
         android:text="Назад" />
 
+    <Button
+        android:id="@+id/test_button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button" />
+
 </RelativeLayout>
