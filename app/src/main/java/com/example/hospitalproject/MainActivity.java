@@ -10,6 +10,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.Toast;
 
+import com.example.hospitalproject.appointment.AppointmentActivity;
+
 public class MainActivity extends AppCompatActivity {
     String TAG_ACTIVITY = "MainActivity";
 
@@ -32,8 +34,8 @@ public class MainActivity extends AppCompatActivity {
                 Log.d(TAG_ACTIVITY, "Appointment button");
 
                 // TODO Change activity
-                //Intent intent = new Intent(MainActivity.this, Context.class);
-                //startActivity(intent);
+                Intent intent = new Intent(MainActivity.this, AppointmentActivity.class);
+                startActivity(intent);
             }
         });
 

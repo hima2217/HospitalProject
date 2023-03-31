@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/appointment_navigation_graph"
+    app:startDestination="@id/appointmentDataFillingFragment">
+    <fragment
+        android:id="@+id/appointmentDataFillingFragment"
+        android:name="com.example.hospitalproject.appointment.AppointmentDataFillingFragment"
+        android:label="AppointmentDataFillingFragment" >
+        <action
+            android:id="@+id/action_appointmentDataFillingFragment_to_appointmentSelectSpecialistFragment"
+            app:destination="@id/appointmentSelectSpecialistFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentSelectSpecialistFragment"
+        android:name="com.example.hospitalproject.appointment.AppointmentSelectSpecialistFragment"
+        android:label="AppointmentSelectSpecialistFragment" >
+        <action
+            android:id="@+id/action_appointmentSelectSpecialistFragment_to_appointmentSelectDateFragment"
+            app:destination="@id/appointmentSelectDateFragment" />
+        <action
+            android:id="@+id/action_appointmentSelectSpecialistFragment_to_appointmentDataFillingFragment"
+            app:destination="@id/appointmentDataFillingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentSelectDateFragment"
+        android:name="com.example.hospitalproject.appointment.AppointmentSelectDateFragment"
+        android:label="AppointmentSelectDateFragment" >
+        <action
+            android:id="@+id/action_appointmentSelectDateFragment_to_appointmentSelectTimeFragment"
+            app:destination="@id/appointmentSelectTimeFragment" />
+        <action
+            android:id="@+id/action_appointmentSelectDateFragment_to_appointmentSelectSpecialistFragment"
+            app:destination="@id/appointmentSelectSpecialistFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentSelectTimeFragment"
+        android:name="com.example.hospitalproject.appointment.AppointmentSelectTimeFragment"
+        android:label="AppointmentSelectTimeFragment" >
+        <action
+            android:id="@+id/action_appointmentSelectTimeFragment_to_appointmentConfirmFragment"
+            app:destination="@id/appointmentConfirmFragment" />
+        <action
+            android:id="@+id/action_appointmentSelectTimeFragment_to_appointmentSelectDateFragment"
+            app:destination="@id/appointmentSelectDateFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/appointmentConfirmFragment"
+        android:name="com.example.hospitalproject.appointment.AppointmentConfirmFragment"
+        android:label="AppointmentConfirmFragment" >
+        <action
+            android:id="@+id/action_appointmentConfirmFragment_to_appointmentSelectTimeFragment"
+            app:destination="@id/appointmentSelectTimeFragment" />
+    </fragment>
+</navigation>
