@@ -88,7 +88,7 @@
         app:layout_constraintVertical_bias="0.223" />
 
     <TextView
-        android:id="@+id/name_doctor_record_confirm_frag"
+        android:id="@+id/name_doctor_record_confirm"
         style="@style/text_size"
         android:layout_width="217dp"
         android:layout_height="39dp"
@@ -101,7 +101,7 @@
         app:layout_constraintVertical_bias="0.263" />
 
     <TextView
-        android:id="@+id/date_and_time_record_conf_frag"
+        android:id="@+id/date_and_time_record_conf"
         style="@style/text_size"
         android:layout_width="221dp"
         android:layout_height="38dp"
