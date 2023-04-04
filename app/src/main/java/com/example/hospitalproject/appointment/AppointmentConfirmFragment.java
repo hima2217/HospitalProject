@@ -1,5 +1,6 @@
 package com.example.hospitalproject.appointment;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.LayoutInflater;
@@ -21,12 +22,6 @@ public class AppointmentConfirmFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.record_confirmation_fragment, container, false);
 
-        view.findViewById(R.id.BackToMain_record_confirmation_fragment).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Log.i("AppointmentConfirmFragment", "Button confirm work!");
-            }
-        });
         view.findViewById(R.id.BackToChoiseTime_record_confirm_fragment).setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
