@@ -1,4 +1,4 @@
-package com.example.hospitalproject;
+package com.example.hospitalproject.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -8,10 +8,15 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.hospitalproject.R;
+
+/** Активити - окно с данными. */
 public class ContactsActivity extends AppCompatActivity {
     String TAG_ACTIVITY = "ContactsActivity";
-
+    /** Кнопка */
     Button backButton;
+
+    /** Метод создания активити. */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

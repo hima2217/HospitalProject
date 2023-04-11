@@ -1,4 +1,4 @@
-package com.example.hospitalproject.appointment;
+package com.example.hospitalproject.UI.appointment;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -13,21 +13,25 @@ import android.widget.TextView;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
-import com.example.hospitalproject.AdapterListView;
+import com.example.hospitalproject.UI.AdapterListView;
 import com.example.hospitalproject.R;
 
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.Date;
 import java.util.List;
-
+/** Фрагмент - выбор времени записи. */
 public class AppointmentSelectTimeFragment extends Fragment {
+    /** Конструктор. */
     public AppointmentSelectTimeFragment() {}
+    /** Метод создания фрагмента. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+    /** Метод загрузки фрагмента на экран.
+     * @return view
+     */
     @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

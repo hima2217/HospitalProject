@@ -5,7 +5,7 @@
     app:startDestination="@id/appointmentDataFillingFragment">
     <fragment
         android:id="@+id/appointmentDataFillingFragment"
-        android:name="com.example.hospitalproject.appointment.AppointmentDataFillingFragment"
+        android:name="com.example.hospitalproject.UI.appointment.AppointmentDataFillingFragment"
         android:label="AppointmentDataFillingFragment" >
         <action
             android:id="@+id/action_appointmentDataFillingFragment_to_appointmentSelectSpecialistFragment"
@@ -13,7 +13,7 @@
     </fragment>
     <fragment
         android:id="@+id/appointmentSelectSpecialistFragment"
-        android:name="com.example.hospitalproject.appointment.AppointmentSelectSpecialistFragment"
+        android:name="com.example.hospitalproject.UI.appointment.AppointmentSelectSpecialistFragment"
         android:label="AppointmentSelectSpecialistFragment" >
         <action
             android:id="@+id/action_appointmentSelectSpecialistFragment_to_appointmentSelectDateFragment"
@@ -24,7 +24,7 @@
     </fragment>
     <fragment
         android:id="@+id/appointmentSelectDateFragment"
-        android:name="com.example.hospitalproject.appointment.AppointmentSelectDateFragment"
+        android:name="com.example.hospitalproject.UI.appointment.AppointmentSelectDateFragment"
         android:label="AppointmentSelectDateFragment" >
         <action
             android:id="@+id/action_appointmentSelectDateFragment_to_appointmentSelectTimeFragment"
@@ -35,7 +35,7 @@
     </fragment>
     <fragment
         android:id="@+id/appointmentSelectTimeFragment"
-        android:name="com.example.hospitalproject.appointment.AppointmentSelectTimeFragment"
+        android:name="com.example.hospitalproject.UI.appointment.AppointmentSelectTimeFragment"
         android:label="AppointmentSelectTimeFragment" >
         <action
             android:id="@+id/action_appointmentSelectTimeFragment_to_appointmentConfirmFragment"
@@ -46,7 +46,7 @@
     </fragment>
     <fragment
         android:id="@+id/appointmentConfirmFragment"
-        android:name="com.example.hospitalproject.appointment.AppointmentConfirmFragment"
+        android:name="com.example.hospitalproject.UI.appointment.AppointmentConfirmFragment"
         android:label="AppointmentConfirmFragment" >
         <action
             android:id="@+id/action_appointmentConfirmFragment_to_appointmentSelectTimeFragment"

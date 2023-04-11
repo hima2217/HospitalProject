@@ -1,4 +1,4 @@
-package com.example.hospitalproject;
+package com.example.hospitalproject.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -9,9 +9,14 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
+import com.example.hospitalproject.R;
+
+/** Активити - успешной записи. */
 public class SuccessfulEntryActivity extends AppCompatActivity {
     String TAG_ACTIVITY = "SuccessfulEntryActivity";
+    /** Кнопка. */
     Button backMainButton;
+    /** Метод создания активити. */
     @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {

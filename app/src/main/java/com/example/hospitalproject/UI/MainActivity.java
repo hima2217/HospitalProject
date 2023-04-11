@@ -1,23 +1,24 @@
-package com.example.hospitalproject;
+package com.example.hospitalproject.UI;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
-import com.example.hospitalproject.appointment.AppointmentActivity;
+import com.example.hospitalproject.R;
+import com.example.hospitalproject.UI.appointment.AppointmentActivity;
 
+/** Активити - главное меню. */
 public class MainActivity extends AppCompatActivity {
     String TAG_ACTIVITY = "MainActivity";
 
+    /** Кнопка. */
     Button appointmentButton;
     Button contactButton;
-
+    /** Метод создания активити. */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -38,7 +39,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        // Contact Button
         contactButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {

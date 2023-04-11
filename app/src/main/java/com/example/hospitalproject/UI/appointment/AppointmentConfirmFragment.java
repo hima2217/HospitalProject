@@ -1,4 +1,4 @@
-package com.example.hospitalproject.appointment;
+package com.example.hospitalproject.UI.appointment;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -14,14 +14,22 @@ import androidx.navigation.Navigation;
 
 import com.example.hospitalproject.R;
 
+/** Фрагмент - подтверждение записи. */
 public class AppointmentConfirmFragment extends Fragment {
+    /** TextView - выбранный доктор. */
     TextView doctorTextView;
+    /** TextView - выбранное время. */
     TextView dateTimeTextView;
+    /** Конструктор. */
     public AppointmentConfirmFragment() {}
+    /** Метод создания фрагмента. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+    /** Метод загрузки фрагмента на экран.
+     * @return view
+     */
     @SuppressLint({"MissingInflatedId", "SetTextI18n"})
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

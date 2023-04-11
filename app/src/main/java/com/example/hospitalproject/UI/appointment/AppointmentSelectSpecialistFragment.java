@@ -1,4 +1,4 @@
-package com.example.hospitalproject.appointment;
+package com.example.hospitalproject.UI.appointment;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -7,27 +7,30 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
-import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import androidx.fragment.app.Fragment;
 import androidx.navigation.Navigation;
 
-import com.example.hospitalproject.AdapterListView;
+import com.example.hospitalproject.UI.AdapterListView;
 import com.example.hospitalproject.R;
 
 import java.util.ArrayList;
 import java.util.List;
 
-
+/** Фрагмент - выбор специалиста. */
 public class AppointmentSelectSpecialistFragment extends Fragment {
+    /** Конструктор. */
     public AppointmentSelectSpecialistFragment() {}
+    /** Метод создания фрагмента. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+    /** Метод загрузки фрагмента на экран.
+     * @return view
+     */
     @SuppressLint("MissingInflatedId")
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {

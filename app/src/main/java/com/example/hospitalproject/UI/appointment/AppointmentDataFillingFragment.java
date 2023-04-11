@@ -1,4 +1,4 @@
-package com.example.hospitalproject.appointment;
+package com.example.hospitalproject.UI.appointment;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,12 +12,18 @@ import androidx.navigation.Navigation;
 
 import com.example.hospitalproject.R;
 
+/** Фрагмент - заполнения данных клиента. */
 public class AppointmentDataFillingFragment extends Fragment{
+    /** Конструктор. */
     public AppointmentDataFillingFragment() {}
+    /** Метод создания фрагмента. */
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
     }
+    /** Метод загрузки фрагмента на экран.
+     * @return view
+     */
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.data_filling_fragment, container, false);
